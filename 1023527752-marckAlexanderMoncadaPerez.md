@@ -76,3 +76,20 @@ Trabajo individual seguro y limpio: Permiten experimentar, cometer errores o pro
 Colaboración en equipo sin conflictos destructivos: En un equipo de 5 personas, cada desarrollador puede crear su propia rama para construir una característica distinta al mismo tiempo. Nadie sobrescribe el código de los demás directamente en el entorno estable.
 
 Estructura de revisión organizada: Facilitan las revisiones de código (Code Reviews). Antes de que cualquier código nuevo se integre al proyecto oficial, se evalúa mediante un Pull Request aislado, garantizando que cumpla con los estándares de calidad.
+
+6. ¿Qué es GitFlow y estructura de ramas?
+GitFlow es un modelo de ramificación y estrategia de gestión de versiones para Git, ideado por Vincent Driessen. Proporciona un marco de trabajo estricto, altamente estructurado y orientado a proyectos de software que tienen ciclos de lanzamiento programados y requieren un control riguroso entre el desarrollo continuo y el entorno de producción.
+
+Estructura de sus ramas principales y auxiliares:
+
+master (o main): Es la rama principal de producción. Contiene únicamente código limpio, estable y listo para los usuarios finales. Cada cambio aquí representa una versión liberada oficialmente.
+
+develop: Es la rama de integración continua. Reúne todo el código desarrollado por el equipo para las próximas actualizaciones. Es el punto base de donde nacen las nuevas funciones y hacia donde convergen.
+
+feature/*: Son ramas temporales de desarrollo de nuevas funcionalidades. Nacen siempre a partir de develop y, una vez terminada la tarea, se fusionan de regreso a develop. Su nomenclatura suele ser feature/nombre-funcion.
+
+release/*: Son ramas dedicadas a preparar un nuevo lanzamiento a producción. Permiten hacer pruebas finales de calidad (QA), correcciones menores de errores y actualización de versiones sin interrumpir el desarrollo de la siguiente fase en develop. Nacen de develop y se fusionan tanto a master como a develop.
+
+hotfix/*: Son ramas de emergencia críticas. Nacen directamente de master para solucionar un fallo grave detectado en el entorno de producción en vivo. Una vez solucionado, se fusionan de urgencia tanto en master como en develop para evitar que el error persista.
+
+¡Copia estos bloques mejorados punto por punto en tu archivo Markdown, haz tus git add . y tus commits correspondientes (git commit -m "docs: ..."), y me avisas cuando estés listo para avanzar con el push y los Pull Requests!
