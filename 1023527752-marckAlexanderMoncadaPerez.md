@@ -18,3 +18,14 @@ Git (El sistema local): Es un software de control de versiones instalado directa
 GitHub (La plataforma en la nube): Es un servicio de alojamiento web basado en la nube que almacena los repositorios de Git. Su función principal es servir como punto central para que varios desarrolladores compartan código, colaboren en equipo y gestionen herramientas como Pull Requests e Issues.
 
 En resumen: Git es la herramienta que gestiona tu historial de versiones en tu equipo, y GitHub es la plataforma en línea donde compartes y respaldas ese trabajo con el resto del mundo.
+
+3. ¿Qué es una nube de repositorios y alternativas?
+Una nube de repositorios es un servicio de alojamiento remoto diseñado para guardar y respaldar proyectos gestionados con un sistema de control de versiones (como Git). Actúa como un servidor central desde el cual se puede sincronizar, compartir y auditar el código fuente.
+
+Alternativas en el mercado:
+
+GitLab: Plataforma integral orientada a DevOps y CI/CD integrado.
+
+Bitbucket: Propiedad de Atlassian, integrada nativamente con Jira y Confluence.
+
+Azure DevOps (Azure Repos): Servicio de Microsoft para repositorios privados integrados en entornos empresariales.
