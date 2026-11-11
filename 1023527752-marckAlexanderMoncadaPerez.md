@@ -29,3 +29,39 @@ GitLab: Plataforma integral orientada a DevOps y CI/CD integrado.
 Bitbucket: Propiedad de Atlassian, integrada nativamente con Jira y Confluence.
 
 Azure DevOps (Azure Repos): Servicio de Microsoft para repositorios privados integrados en entornos empresariales.
+
+4. Glosario básico de Git
+
+Commit: Es una captura instantánea (snapshot) del estado actual de todos los archivos de tu proyecto en un momento determinado. Guarda el progreso realizado de forma permanente en el historial local de Git.
+
+Ejemplo práctico: Al terminar de programar la interfaz de inicio de sesión, ejecutas git commit -m "feat: implementar estructura inicial del login" para congelar ese estado en el historial.
+
+Branch (Rama): Es una línea de tiempo independiente y paralela dentro del repositorio. Permite desarrollar nuevas funciones, corregir errores o experimentar sin alterar ni desestabilizar el código de la rama principal (develop o master).
+
+Ejemplo práctico: Creas una rama llamada feature/carrito-compras para añadir la funcionalidad de compras de forma aislada mientras la aplicación principal sigue funcionando sin modificaciones.
+
+Merge (Fusión): Es el proceso mediante el cual Git combina el historial y los cambios de dos ramas diferentes en una sola. Integra el trabajo aislado que hiciste en una rama hacia una rama receptora (como develop).
+
+Ejemplo práctico: Una vez probada y terminada la función en feature/carrito-compras, te posas en develop y ejecutas un merge para unir todo el código nuevo.
+
+Pull y Push:
+
+Push: Es la acción de enviar los commits que realizaste localmente en tu computadora hacia el repositorio remoto en la nube (por ejemplo, tu fork en GitHub).
+
+Pull: Es la acción inversa; descarga las actualizaciones más recientes que están en el repositorio remoto y las fusiona automáticamente en tu entorno de trabajo local.
+
+Ejemplo práctico: Ejecutas git push origin develop para subir tus últimos cambios a la nube, o git pull origin develop para traer a tu PC el código que un compañero subió recientemente.
+
+Pull Request (PR): Es una solicitud formal realizada a través de una plataforma web (como GitHub) para avisar a los colaboradores o líderes de proyecto que has terminado cambios en una rama y pides que sean revisados e integrados (merged) en otra rama (por ejemplo, de tu rama de funciones hacia develop).
+
+Ejemplo práctico: Creas un Pull Request en GitHub para proponer que tu rama feature/consulta se integre a la rama develop tras pasar las revisiones de código.
+
+Clone (Clonar): Es la acción de descargar por primera vez una copia exacta de un repositorio remoto (con todo su historial de commits y ramas) desde la nube hacia el disco duro de tu computadora local.
+
+Ejemplo práctico: Ejecutas git clone [https://github.com/usuario/proyecto.git](https://github.com/usuario/proyecto.git) para clonar el repositorio base del profesor y empezar a trabajar en él en tu ordenador.
+
+Upstream y Origin:
+
+Origin: Es el alias o nombre por defecto que Git le asigna a tu propio repositorio remoto personal en la nube (el fork que creaste en tu cuenta).
+
+Upstream: Es el alias convencional que se le asigna al repositorio original o principal del cual hiciste el fork (por ejemplo, el repositorio matriz del profesor). Permite traer actualizaciones oficiales de la fuente original.
