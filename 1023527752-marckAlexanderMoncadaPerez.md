@@ -65,3 +65,14 @@ Upstream y Origin:
 Origin: Es el alias o nombre por defecto que Git le asigna a tu propio repositorio remoto personal en la nube (el fork que creaste en tu cuenta).
 
 Upstream: Es el alias convencional que se le asigna al repositorio original o principal del cual hiciste el fork (por ejemplo, el repositorio matriz del profesor). Permite traer actualizaciones oficiales de la fuente original.
+
+5. La importancia de las ramas (Branches)
+Las ramas son uno de los pilares fundamentales del control de versiones moderno. Su propósito principal es permitir el aislamiento del flujo de trabajo, dividiendo el código en entornos independientes.
+
+¿Por qué se deben crear ramas y qué ventajas ofrecen?
+
+Trabajo individual seguro y limpio: Permiten experimentar, cometer errores o probar ideas experimentales sabiendo que, si algo sale mal, puedes descartar la rama sin dañar el funcionamiento principal de la aplicación.
+
+Colaboración en equipo sin conflictos destructivos: En un equipo de 5 personas, cada desarrollador puede crear su propia rama para construir una característica distinta al mismo tiempo. Nadie sobrescribe el código de los demás directamente en el entorno estable.
+
+Estructura de revisión organizada: Facilitan las revisiones de código (Code Reviews). Antes de que cualquier código nuevo se integre al proyecto oficial, se evalúa mediante un Pull Request aislado, garantizando que cumpla con los estándares de calidad.
